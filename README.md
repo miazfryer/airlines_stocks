@@ -16,13 +16,13 @@
 * [Project Structure](#project-structure)
 
 ## Motivation
-According to the Center for Disease Control and Prevention (CDC), [15.7 out of 1000](https://www.cdc.gov/media/releases/2015/p0225-pneumonia-hospitalizations.html) children are diagnosed with pneumonia in a given year, and [~326K children ages 1-4 in the US died in 2018](https://www.cdc.gov/nchs/data/hus/2019/007-508.pdf) from pneumonia and influenza, the third leading medical-related causes of death. In addition, the Association of American Medical Colleges (AAMC) projected that the shortage of physicians in non-primary and non-surgical specialties (i.e. radiology) can reach up to [42,000 by 2033](https://www.aamc.org/news-insights/press-releases/new-aamc-report-confirms-growing-physician-shortage) in the US. Given that pneumonia is still a prevalent issue and that there may be a shortage of physicians who can diagnose patients, healthcare organizations may experience delays in care.
+Stock investing without any stratgies can be daunting to decide which to buy. The goal of this project is to bring clarity via a Machine Learning driven dashboard for analyzing and forecasting changes amongst the four major american alines: Southwest, American, Delta and United airlines. Visualizing closing price performance for these airlines at once is a valuable tool for to easily identify trends and do side by side comparison.  Both ARIMA/SARIMA and LSTM neural network produce price forecasts to faciliate investors to make informed investment decisions.
 
 ![stock overview](./images/overview.png)
 
 
 ## Data Sources
-ACME Health, one of the largest integrated delivery networks (IDNs) in the US, has recently experienced staffing shortages, especially pulmonologists and radiologists. This shortage has been more evident during the COVID-19 pandemic. They have reached out to our team at AIM Consulting LLC to help develop data analytics and modeling tools to mitigate pain points and delays in their processes. After reviewing ACME Health's workflows, we have determined that one of the best ways our team can help is to develop an image classifier model that can accurately identify pneumonia in the lungs of pediatric patients using chest X-ray images.
+One of the most important steps in machine learning and predictive modeling is gathering good data. For this project, the data is loaded from Yahoo Finance using pandas DataReader function.
 
 ## Feature Engineering/Technical indicators
 
@@ -69,7 +69,6 @@ Our dummy classifier model has a recall of 72%.
 
 As for the other models, the following graph shows the recall metric per model.
 
-
 We found that model 2 was the best model with the highest recall score. The following is the confusion matrix of model 2.
 
 
@@ -84,25 +83,16 @@ Though our model can aid ACME health to diagnose patients without a physician, t
 ## Project Structure
 ```
 .
-├── 01_Pneumonia_Classifier_EDA.ipynb.
-├── 02_Splitting_Image_Files.ipynb 
-├── 03_Binary_Modeling.ipynb.  
-├── 04_Model_Visualizations.ipynb 
-├── 05_Binary_Transfer_Learning.ipynb
+├── 01_EDA.ipynb
+├── 02_ARIMA_SARIMA.ipynb 
+├── 03_Expoential_model.ipynb  
+├── 04_LSTM_single_step.ipynb
+├── 05_LSTM_multstep.ipynb.ipynb
 ├── 06_Multiclass_Modeling.ipynb
 ├── README.md
-├── Pneumonia_X-Ray_Presentation.pdf
-├── data
-│   ├── BACTERIA
-│   ├── NORMAL
-│   ├── PNEUMONIA
-│   ├── VIRUS
-│   ├── split
-│   └── split2
-├── images
-├── models
-└── tools
-    ├── __init__.py
-    ├── misc.py
-    └── visualizations.py
+├── Airline_Stocks_Presentation.pdf
+├── gitignore
+└── images
+ 
+   
 ```
