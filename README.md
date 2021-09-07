@@ -40,26 +40,21 @@ Financial analysts use a number of technical indicators, the one's including in 
 ![risk](./images/risk.png)
 
 ## Data Preparation
-The images where first sorted into two folders: pneumonia and normal. The images were then further sorted with a ratio of 60:20:20 in three folders: train, validation, and test. 
-
-We also split the pneumonia images further into bacterial and viral pnuemonia folders, and the split the images into train, validation, and test folders using the same ratio as above.
-
-Using an image data generator, we rescaled each pixel by a factor of 1/255, resized the images to (64,64), and changed images to gray scale. We had a different image data generator for train, validation, and test images. We used the generators and the next() funtion to extract the images and corresponding labels. We further explored the data by spliting the pneumonia files into bacterial and viral infection and repeat the same steps to create generatros for train, test and validation data set. 
+For the regression models (ARIMA, SARIMA), the data was first turned stationary by differencing and taking the log version of the data to remove changing varicance. For the deep learning recurrent neural network models (long hsort term memory), the data was first scaled using the the min max scalar from SKlearn. 
 
 ## Model Training and Testing
-We tested out 6 models in addition to a dummy model:
+We tested out many different models using three main predictive machine learning techniques: ARIMA, SARIMA, Exponential Smoothing and LSTM
 
 <ol start="0">
-  <li> Dummy Classifier Model (using stratify)</li>
-  <li>Baseline Neural Network</li>
-  <li>Neural Network with Dense Layers</li>
-  <li>Neural Network with Dense and Drop Layers</li>
-  <li>Convolutional Neural Network (CNN)</li>
-  <li>CNN with Class Weights</li>
-  <li>CNN with Focal Loss</li>
+  <li> ARIMA (baseline)</li>
+  <li> ARIMA (gridsearch to find optimal paramters)</li>
+  <li>SARIMA</li>
+  <li>Simple exponential smoothing </li>
+  <li>Holt linear smoothing</li>
+  <li>Holt-Winter’s seasonal smoothing/li>
+  <li>LSTM with single time step</li>
+  <li>LSTM with multiple time step</li>
 </ol>
-
-For model 0, the dummy classifier, with fit the model on the train images and labels, and applied the fitted model to the train data. For models 1-6, we complied and fit the model on the train data, passing in the validation set as well. We used the model to evaluate the test data.
 
 ![ARIMA](./images/ARIMA.png)
 ![LSTM](./images/LSTM.png)
@@ -75,13 +70,11 @@ As for the other models, the following graph shows the recall metric per model.
 We found that model 2 was the best model with the highest recall score. The following is the confusion matrix of model 2.
 
 
-
-
 ## Conclusions
 Given the high recall or sensitivity score, we recommend ACME Health to pilot our binary model with their physicians and compare the model results with the physicians' diagnoses. We believe that the model can help increase pneumonia diagnosis sensitivity, reduce the time it takes to diagnose pneumonia, and allow physicians to reallocate their time into other work. As for the multi-class model, we do not recommend Acme Health to use this model at this time. We would like to do further work on the model and try to obtain more images to improve the model's performance.
 
 ## Next Steps
-Though our model can aid ACME health to diagnose patients without a physician, this may need to be first approved by health insurers, as some reimbursements require a physician's input. In addition, we would like to test or re-train our models on chest X-ray images of people in other ages groups, especially those who are ages 65+ who may be more prone to infection. Finally, we would like to run similar models to detect other respiratory conditions such as chronic obstructive pulmonary disease.
+Predicting stock prices using these models is only half of the story. The result will be even more accurate to be used to sentimental analysis on the news for these companies to evaluate if there is an upward trend with more positive news. 
 
 ## Project Structure
 ```
