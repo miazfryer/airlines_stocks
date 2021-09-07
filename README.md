@@ -61,17 +61,9 @@ We tested out many different models using three main predictive machine learning
 ![exsmoothing](./images/exsmoothing.png)
 
 ## Analysis
-For our analysis, we wanted to focus on the recall metric because we wanted to reduce the number of false negatives or wrongly classifying patients as non-pneumonia when in fact they have pneumonia. In the medical field, the term sensitivity is synonymous to recall.
-
-Our dummy classifier model has a recall of 72%.
-
-As for the other models, the following graph shows the recall metric per model.
-
-We found that model 2 was the best model with the highest recall score. The following is the confusion matrix of model 2.
-
 
 ## Conclusions
-Given the high recall or sensitivity score, we recommend ACME Health to pilot our binary model with their physicians and compare the model results with the physicians' diagnoses. We believe that the model can help increase pneumonia diagnosis sensitivity, reduce the time it takes to diagnose pneumonia, and allow physicians to reallocate their time into other work. As for the multi-class model, we do not recommend Acme Health to use this model at this time. We would like to do further work on the model and try to obtain more images to improve the model's performance.
+
 
 ## Next Steps
 Predicting stock prices using these models is only half of the story. The result will be even more accurate to be used to sentimental analysis on the news for these companies to evaluate if there is an upward trend with more positive news. 
