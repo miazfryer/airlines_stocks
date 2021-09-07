@@ -69,7 +69,6 @@ Our dummy classifier model has a recall of 72%.
 
 As for the other models, the following graph shows the recall metric per model.
 
-
 We found that model 2 was the best model with the highest recall score. The following is the confusion matrix of model 2.
 
 
@@ -84,25 +83,16 @@ Though our model can aid ACME health to diagnose patients without a physician, t
 ## Project Structure
 ```
 .
-├── 01_Pneumonia_Classifier_EDA.ipynb.
-├── 02_Splitting_Image_Files.ipynb 
-├── 03_Binary_Modeling.ipynb.  
-├── 04_Model_Visualizations.ipynb 
-├── 05_Binary_Transfer_Learning.ipynb
+├── 01_EDA.ipynb
+├── 02_ARIMA_SARIMA.ipynb 
+├── 03_Expoential_model.ipynb  
+├── 04_LSTM_single_step.ipynb
+├── 05_LSTM_multstep.ipynb.ipynb
 ├── 06_Multiclass_Modeling.ipynb
 ├── README.md
-├── Pneumonia_X-Ray_Presentation.pdf
-├── data
-│   ├── BACTERIA
-│   ├── NORMAL
-│   ├── PNEUMONIA
-│   ├── VIRUS
-│   ├── split
-│   └── split2
-├── images
-├── models
-└── tools
-    ├── __init__.py
-    ├── misc.py
-    └── visualizations.py
+├── Airline_Stocks_Presentation.pdf
+├── gitignore
+└── images
+ 
+   
 ```
