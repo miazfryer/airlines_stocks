@@ -30,7 +30,6 @@ ACME Health, one of the largest integrated delivery networks (IDNs) in the US, h
 ![Bollingerg](./images/Bollingerg.png)
 
 • Moving Average Convergence Divergence (MACD): A momentum indicator which is used to identify trends over time. it is a function of the 12 and 26 day EWMAs.
-![MACD](./images/MACD.png)
 
 • Relative Strength Index (RSI): A momentum oscillator which ranges from 0 to 100. Funds with over 70 or under 30 are traditionally identified as having strong momentum up or down. The RSI is calculated over a period of 14 days, and is a function of relative strength(RS), a ratio of exponentially smoothed moving averages of up and down periods during this time.
 
