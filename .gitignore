@@ -1,0 +1,15 @@
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Finder
+.DS_Store
+
+# Pycharm/IDEs
+tools/__pycache__/
+.idea/
+
+# Saved Models
+saved_models/
+
+# Scratch files
+scratch.ipynb
