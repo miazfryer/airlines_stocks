@@ -68,11 +68,11 @@ For our analysis, we wanted to focus on the recall metric because we wanted to r
 Our dummy classifier model has a recall of 72%.
 
 As for the other models, the following graph shows the recall metric per model.
-![Model_recall](./images/recall_barplot.png)
+
 
 We found that model 2 was the best model with the highest recall score. The following is the confusion matrix of model 2.
 
-![Model_2_confusion_matrix](./images/confusion_matrices/cm_model2.png) 
+
 
 
 ## Conclusions
