@@ -1,6 +1,6 @@
 # Airlines Stocks Evaluation 
 
-![yahoo_finance](/images/Yahoo_Finance_Logo_2019.jpeg)
+![yahoo_finance](/images/yahoo_log.png)
 
 ## Author
 * Mia Fryer
