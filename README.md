@@ -29,12 +29,13 @@ Financial analysts use a number of technical indicators, the one's including in 
 
 • Moving Average Convergence Divergence (MACD): A momentum indicator to spot increasing short-term momentum using the difference between a short-term(12) and long-term(26 exponential moving average. Generally speaking, when a short-term moving average crossing below a longer-term average is used to illustrate that the asset's price has been moving downward at a faster rate and that it may be a good time to sell. The reverse will also be true for a bullish momemtum and that can be represneted with a positive MACD value. 
 
+![MACDg](./images/macdluv.png)
+
 • Bollinger Bands: A statistical chart characterizing the prices and volatility over time. The chart is plotted using the moving average of 20 days and two standard deviations of the rolling average as the upper bound and lower bound. A common approach when using Bollinger Bands® is to identify overbought or oversold market conditions. When the price of the asset breaks below the lower band of the Bollinger Bands®, prices have perhaps fallen too much and are due to bounce. On the other hand, when price breaks above the upper band, the market is perhaps overbought and due for a pullback.
 
-![Bollingerg](./images/Bollingerg.png)
+![Bollingerg](./images/Bollingergsw.png)
 
 • Relative Strength Index (RSI): A momentum oscillator which ranges from 0 to 100. Values of 70 or above indicate that a security is becoming overbought or overvalued and may be due for a corrective pullback in price. An RSI reading of 30 or below indicates an oversold or undervalued condition. The standard is to use 14 periods to calculate the initial RSI value. 
-
 
 •Simple Risk Evaluation: using daily percentage returns to compare the expected return with the standard deviation of the daily returns as risk.
 ![risk](./images/risk.png)
@@ -48,7 +49,6 @@ We tested out many different models using three main predictive machine learning
 <ol start="0">
   <li> ARIMA (baseline)</li>
   <li> ARIMA (gridsearch to find optimal paramters)</li>
-  <li>SARIMA</li>
   <li>Simple exponential smoothing </li>
   <li>Holt linear smoothing</li>
   <li>Holt-Winter’s seasonal smoothing/li>
@@ -62,7 +62,11 @@ We tested out many different models using three main predictive machine learning
 
 ## Analysis
 
+LSTM with single time step expectedly did better than LSTM with multiple time step with a root mean squares error of 0.8329 instead of 5.3819. ARIMA's best model resulted with a root mean squared error of 0.418 and exponential smoothing forecast has an error of 0.701. Overall, all 4 different methods generated satisfactory results.
+
 ## Conclusions
+
+
 
 
 ## Next Steps
