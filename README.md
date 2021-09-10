@@ -66,7 +66,7 @@ LSTM with single time step expectedly did better than LSTM with multiple time st
 
 ## Conclusions
 
-
+These predictive models are more accurate for next day prediction so it is neccessasry to combine machine learning moodelings with different trading indicators to better the stock analysis and further extrapolate more accurate information. 
 
 
 ## Next Steps
