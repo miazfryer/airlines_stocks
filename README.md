@@ -44,7 +44,7 @@ Financial analysts use a number of technical indicators, the one's including in 
 For the regression models (ARIMA, SARIMA), the data was first turned stationary by differencing and taking the log version of the data to remove changing varicance. For the deep learning recurrent neural network models (long hsort term memory), the data was first scaled using the the min max scalar from SKlearn. 
 
 ## Model Training and Testing
-We tested out many different models using three main predictive machine learning techniques: ARIMA, SARIMA, Exponential Smoothing and LSTM
+The following predcitive models were implemented using three main predictive machine learning techniques: ARIMA, SARIMA, Exponential Smoothing and LSTM on the Southwest airlines stock prices:
 
 <ol start="0">
   <li> ARIMA (baseline)</li>
@@ -66,7 +66,7 @@ LSTM with single time step expectedly did better than LSTM with multiple time st
 
 ## Conclusions
 
-
+These predictive models are more accurate for next day prediction so it is neccessasry to combine machine learning moodelings with different trading indicators to better the stock analysis and further extrapolate more accurate information. 
 
 
 ## Next Steps
